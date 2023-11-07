@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+
+import llamaPhoto from "../assets/llama1.png";
+---
+
+<Layout title="About">
+  <Image
+    src={llamaPhoto}
+    alt="Llama"
+    width={300}
+    class="my-0 mx-auto rounded-full"
+  />
+
+  <p class="text-white text-center py-6">Hi, my names Dan!</p>
+</Layout>
